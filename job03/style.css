@@ -2,26 +2,27 @@ body {
     margin:auto;
     justify-items: center;    
 }
+/* Centre la page */
 section {
     background-color: #88c1d0;
     width: 200px;
     height: 200px;
     margin: 5%;
 }
+/*  affiche les carre */
 @media screen and (min-device-width:1600px) {
     body {
         display: flex;
         flex-direction: row;
     }
-
 }
-
+/* Met la page en flex et les eléments aligné sur la largeur */
 @media screen and (min-width:768px) and (max-width:1599px) {
 body {
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
-
+/* Met la page en grid et alinge les élement en 2 colonne */
 }
 @media screen and (max-width:767px) {
     body {
@@ -30,3 +31,4 @@ body {
         width:fit-content;
     }
 }
+/* Met la page en flex et alinge les élement en colonne en prendant le format de toute la page*/

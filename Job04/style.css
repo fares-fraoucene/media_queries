@@ -1,0 +1,67 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+
+}
+/*Centre la barre de nav*/
+
+li{
+    width: 7rem;
+    list-style-type: none;
+}
+/*Organisation des élements de la barre de nav*/
+
+
+
+  
+  .burger {
+    display: none;
+  }
+
+  .burger:checked ~ ul {        /* ul s'affiche */
+    display: flex;
+}
+
+  .burger2 {
+    display:block;
+    width: 3.4em;
+    height: 2.4em;
+    line-height: .1em;
+    border: 0.1em solid black;
+    padding: 0 .4em .4em;
+  }
+  
+  .burger2 hr {
+    color: #ddd;
+    height: .1em;
+    border: 0;
+    background: black;
+    border: none;
+  }
+  
+/*   Le burger ne s'affiche pas sur écran large   */
+@media (min-device-width:768px) { .burger2{display:none} }
+
+
+
+
+    /*Style qui s'affiche sur minimum 768px*/
+
+@media (max-device-width:767px) {
+
+    nav ul{ 
+        flex-direction:column; /*  la liste en colonne */
+        display: none;         /*  par défaut la ul n'est pas affichée, il faut cliquer pour l'afficher */
+        margin:0;
+        width:auto;  
+     }
+     
+    }
+    /*Style qui s'affiche sur maximum 768px*/

@@ -1,21 +1,22 @@
 body {
     background-color: #88c1d0;
 }
-
+/* tout les appareile non compris dans les autre les style auront le background bleu */
 @media screen and (max-width: 1920px) and (min-width: 1680px) {
     body {
         background-color: #ffca4b;
     }
 }
-
+/* grace a cette commande tout les appareils avec un ecran max en largeur de 1920px à 1680px verront le background jaune */
 @media screen and (max-width: 1680px) and (min-width: 1280px) {
     body {
         background-color: #275fa0;
     }
 }
-
+/* grace a cette commande tout les appareils avec un ecran max en largeur de 1680px à 1280px verront le background Bleu */
 @media screen and (max-width: 1280px) {
     body {
         background-color: #ffffff;
     }
 }
+/* grace a cette commande tout les appareils avec un ecran max en largeur de 1680px à 0px verront le background blanc */
